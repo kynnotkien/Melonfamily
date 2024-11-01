@@ -1,0 +1,381 @@
+/* color pattle */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif ;
+}
+
+body{
+    min-height: 100vh;
+    background: #1c2833;
+
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+
+.logo{
+    font-size: 32px;
+    color: black;
+    text-decoration: none;
+    font-weight: 700;
+    margin-right: 100px;
+}
+
+.nav_bar a {
+    position: relative;
+    font-size: 20px;
+    color: black;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 50px;
+}
+
+.nav_bar a::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: black;
+    transition: 0.4s;
+}
+
+.nav_bar a:hover::before{
+    width: 100%;
+}
+
+.button-top{
+    font-size: 20px;
+    color: black;
+    background-color: transparent;
+    border-radius: 30px;
+    padding: 10px 20px;
+    margin-left: 480px;
+    border: 2px solid black;
+}
+
+.button-top:hover{
+    background-color: black;
+    color: white;
+    transition: 0.4s;
+}
+
+.image-home{
+    transform: matrix(solid);
+    position: relative;
+    max-width: 100%;
+    height: auto;
+    background-image: linear-gradient(rgb(148, 255, 255), white);
+}
+
+.image-home-overlay{
+    position: absolute;
+    top: -45%;
+    left: 0px;
+    width: 1900px;
+    height: 1400px;
+    background-image: linear-gradient(transparent, #1c2833);
+}
+
+.black-blank{
+    transform: matrix(solid);
+    position: absolute;
+    top: 35%;
+    left: 25%;
+    max-width: 50%;
+    height: 50%;
+    opacity: 25%;
+    border-radius: 5%;
+}
+
+.title-text{
+    font-family: cursive;
+    position: absolute;
+    top: 45%;
+    width: 100%;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.timer-text-days{
+    font-family: cursive;
+    position: absolute;
+    top: 60%;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+.timer-text-time{
+    font-family: cursive;
+    position: absolute;
+    top: 65%;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+.white-blank{
+    background-color: #F4DAF9;
+    position: absolute;
+    transform: matrix(solid);
+    top: 130%;
+    width: 100%;
+    height: 200%;
+    transition: 1s ;
+}
+
+.kyn-info{
+    position: absolute;
+    top: 200px;
+    left: 10%;
+    width: 30%;
+    height: 700px;
+    background-image: linear-gradient(rgb(148, 255, 255), white);
+    border-radius: 40px;
+    /* border: 5px solid aqua; */
+}
+
+.kan-info{
+    position: absolute;
+    top: 200px;
+    left: 60%;
+    width: 30%;
+    height: 700px;
+    background-color: #DBC2EE;
+    background-image: linear-gradient(#DBC2EE, white);
+    border-radius: 40px;
+    /* border: 5px solid #B69FD5; */
+}
+
+
+
+.kyn-info::after, .kyn-info::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: conic-gradient(blue, white, blue);
+    top: -1.5%;
+    left: -2%;
+    z-index: -1;
+    padding: 10px;
+    border-radius: 47px;
+    animation: 3s spin linear infinite;
+}
+
+.kyn-info::before{
+    filter: blur(1.5rem);
+    opacity: 0.5;
+}
+
+.kan-info::after, .kan-info::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: conic-gradient(purple, white, purple);
+    top: -1.5%;
+    left: -2%;
+    z-index: -1;
+    padding: 10px;
+    border-radius: 42px;
+    animation: 3s spin linear infinite;
+}
+
+.kan-info::before{
+    filter: blur(1.5rem);
+    opacity: 0.5;
+}
+
+
+.section-1{
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    height: 1000px;
+}
+
+.section-1-title{
+    font-family: cursive;
+    font-size: 50px;
+    position: relative;
+    top: 00px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.kyn-avatar{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    border: 5px solid aqua;
+}
+
+.kan-avatar{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    border: 5px solid #B69FD5;
+}
+
+.bio-name{
+    font-family: cursive;
+    font-size: 30px;
+    position: absolute;
+    top: 20px;
+    width: 500px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+}
+
+.quote-text{
+    font-family: cursive;
+    font-size: 15px;
+    position: absolute;
+    top: 70px;
+    width: 490px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+}
+
+.about-text{
+    font-family: cursive;
+    font-size: 25px;
+    position: relative;
+    width: 200px;
+    text-align: left;
+    color: rgb(0, 0, 0);
+    padding: 20px; 
+}
+
+.bio-box{
+    position: relative;
+    top: 150px;
+    left: 20px;
+    width: 400px;
+    height: 380px;
+}
+
+.bio-text{
+    position: relative;
+    left: 20px;
+    font-family: cursive;
+    font-size: 15px;
+    width: 370px;
+    text-align: left;
+    color: rgb(0, 0, 0);
+}
+
+.social-media{
+    position: relative;
+    left: 20px;
+    width: 400px;
+    height: 200px;
+}
+
+.social-media-box{
+    position: relative;
+    left: 20px;
+    width: 360px;
+    height: 50px;
+}
+
+.social-media-icon{
+    position: relative;
+    top: 10px;
+    left: 20px;
+    width: 40x;
+    height: 30px;
+    align-items: center;
+}
+
+.social-media-text{
+    position: relative;
+    font-family: cursive;
+    font-size: 20px;
+    width: 10px;
+    text-align: left;
+    left: 50px;
+    color: rgb(0, 0, 0);
+}
+
+.see-more-button{
+    position: relative;
+    font-family: cursive;
+    font-size: 15px;
+    color: black;
+    background-color: #7FFF00;
+    width: 90px;
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+    top: 30px;
+    left: 39%;
+}
+
+.see-more-button:hover{
+    background-color: transparent;
+    border: 3px solid #7FFF00;
+    transition: 0.4s;
+}
+
+.section-2{
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 1200px;
+    background-color: black;
+}
+
+.spotify{
+    position: relative;
+    left: 60px;
+    margin: 30px;
+    box-shadow: 0px 0px 40px white;
+}
+
+
+.spotify-logo{
+    position: absolute;
+    width: 220px;
+    height: auto;
+    margin: 30px;
+}
+
+.subtitle{
+    font-family: cursive;
+    font-size: 25px;
+    position: relative;
+    width: 80%;
+    text-align: center;
+    color: white;
+    left: 10%;
+}
+
