@@ -347,8 +347,6 @@ body{
 
 .section-2{
     position: relative;
-    justify-content: space-between;
-    align-items: center;
     width: 100%;
     height: 1200px;
     background-color: black;
@@ -376,6 +374,132 @@ body{
     width: 80%;
     text-align: center;
     color: white;
-    left: 10%;
+    left: 0px;
 }
 
+.section-3{
+    position: absolute;
+    height: 1000px;
+    width: 100%;
+    background: beige;
+}
+
+.box{
+    position: relative;
+    min-height: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact-container{
+    position: relative;
+    justify-content: flex-start;
+    height: 600px;
+    width: 1200px;
+    background: rgb(239, 239, 131);
+    left: 9%;
+    margin: 20px;
+    border-radius: 42px;
+    border: 5px solid black;
+    margin-top: 50px;
+
+}
+
+.image-contact{
+    position: relative;
+    width: 400px;
+    height: auto;
+    left: 50px;
+}
+
+.contact-container-a{
+    position: relative;
+    align-items: center;
+    height: 550px;
+    width: 450px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.contact-icon{
+    position: relative;
+    align-items: center;
+    width: 50px;
+    height: auto;
+    margin: 10px;
+    left: 100px;
+}
+
+.contact-divide-colum{
+    position: relative;
+    width: 1px;
+    height: 510px;
+    border: 3px solid black;
+    border-radius: 5px;
+    bottom: 90%;
+    left: 50%;
+}
+
+.contact-container-b{
+    position: relative;
+    align-content: center;
+    justify-content: center;
+    height: 550px;
+    width: 450px;
+    bottom: 1075px;
+    left: 650px;
+    margin-left: 20px;
+    margin-top: 20px;
+    background-color: orange;
+    border: 3px solid black;
+    border-radius: 25px;
+}
+
+.input-box input,
+.input-box textarea{
+    margin-top: 40px;
+    margin-left: 40px;
+    border: none;
+    padding: 5px 0;
+    position: relative;
+    width: 80% !important;
+    font-size: 1.1em;
+    background: transparent;
+    border-bottom: 2px solid black;
+    outline: none;
+    resize: none;
+}
+
+.input-box label{
+    position: absolute;
+    left: 0px;
+    pointer-events: none;
+    margin-top: 40px;
+    margin-left: 40px;
+    font: 20px;
+    transition: 0.4s;
+    font-family: cursive;
+    font-size: 20px;
+}
+
+.input-box input:focus ~ label,
+.input-box textarea:focus ~ label,
+.input-box textarea:valid ~ label,
+.input-box input:valid ~ label {
+  color: white;
+  font-size: 15px;
+  transform: translateY(-24px);
+}
+
+.input-box input[type="submit"]{
+    width: 80%;
+    background-color: wheat;
+    border: 3px solid black;
+    border-radius: 25px;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 20px;
+    font-family:  cursive;
+}
