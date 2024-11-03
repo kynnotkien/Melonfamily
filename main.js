@@ -10,8 +10,7 @@ function diff(){
     diff_minutes = diff['minutes'];
     diff_seconds = diff['seconds']; diff_seconds = diff['seconds'] < 10 ? '0' + diff_seconds : diff_seconds;
 
-    document.getElementById("days-output").innerHTML = diff_years + " years " + diff_months + " months " + diff_days + " days "
-    document.getElementById("time-output").innerHTML = diff_hours + " hours " + diff_hours + " hour " + diff_minutes + " minutes " + diff_seconds + " seconds ";
+    document.getElementById("days-output").innerHTML = diff_years + " years " + diff_months + " months " + diff_days + " days " + diff_hours + " hours " + diff_hours + " hour " + diff_minutes + " minutes " + diff_seconds + " seconds ";
 
   }
   setInterval(diff, 1000);
