@@ -14,10 +14,10 @@ body{
 
 }
 
-nav ul{
+.nav ul{
     width: 100%;
     list-style: none;
-    display: flex;
+    display: none;
     position: fixed;
     justify-content: center;
     align-items: center;
@@ -26,11 +26,11 @@ nav ul{
     z-index: 90;
 }
 
-nav li{
+.nav li{
     height: 40px;
 }
 
-nav a{
+.nav a{
     height: 100%;
     padding: 0 30px;
     text-decoration: none;
@@ -40,11 +40,11 @@ nav a{
     color: rgb(180, 180, 180);
 }
 
-nav li:first-child{
+.nav li:first-child{
     margin-right: auto;
 }
 
-nav a:hover{
+.nav a:hover{
     color: white;
     transition: 0.3s;
 }
@@ -75,8 +75,6 @@ nav a:hover{
 .hide-on-pc{
     display: none;
 }
-
-
 
 .image-home{
     position: relative;

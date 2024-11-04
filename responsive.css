@@ -45,6 +45,7 @@
         font-size: 15px;
     }
 }
+
 @media (max-width: 480px) {
     .title-text{
         font-size: 19px;
@@ -57,5 +58,14 @@
     }
     .hide-on-pc{
         display: block;
+    }
+}
+
+@media (max-width: 376px) {
+    .title-text{
+        font-size: 16px;
+    }
+    .timer-text{
+        font-size: 12px;
     }
 }
