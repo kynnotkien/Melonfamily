@@ -25,7 +25,6 @@
 @media (max-width: 992px) {
     .nav_bar a{
         font-size: 15px;
-        margin-left: 10px;
     }
     .title-text{
         font-size: 30px;
@@ -46,16 +45,17 @@
         font-size: 15px;
     }
 }
-
 @media (max-width: 480px) {
-    .nav_bar a{
-        font-size: 15px;
-        margin-left: 10px;
-    }
     .title-text{
         font-size: 19px;
     }
     .timer-text{
         font-size: 15px;
+    }
+    .hide-on-mobile{
+        display: none;
+    }
+    .hide-on-pc{
+        display: block;
     }
 }
