@@ -8,6 +8,7 @@
     <title>Melon family</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/moment-precise-range-plugin@1.3.0/moment-precise-range.min.js"></script>
+    <script src="main.js"></script>
 </head>
 <body>
   <!-- header -->
@@ -32,146 +33,56 @@
     </nav>
 
   <!-- home container -->
-    <div class="section-head">
-      <img src="Images/Capture00429.jpg" class="image-home">
-      <div class="timer-box-screen"></div>
-      <div class="timer-box">
-        <h1 class="title-text">They have been together for:</h1>
-        <h2 id="days-output" class="timer-text"></h2>
-      </div>
-    </div>
-  <!-- information -->
-    <!-- <section class="section-1">
-      <div>
-        <h1 class="section-1-title">About us</h1>
-        <div class="kyn-info">
-          <img src="Images/kyn-avatar.jpg" class="kyn-avatar">
-          <h1 class="bio-name">KynNotKien</h1>
-          <h1 class="quote-text">"Nothing is default"</h1>    
-            <div class="bio-box">
-              <h1 class="about-text">About me</h1>
-              <p class="bio-text">Hi, Im Kien! you can call me Kyn</p>
-              <p class="bio-text">My brithday is 08/12/2007</p>
-              <p class="bio-text">I love my Kannie, watching anime and coding :3</p>
-              <p class="bio-text">I had played lots of game before, but almost them got banned and out of sever.</p>
-              <p class="bio-text">Coding make your life better :D</p>
-            </div>
-            <div class="social-media">
-              <div class="social-media-box">
-                <img src="Images/discord.png" alt="discord" class="social-media-icon">
-                <a class="social-media-text" href="#">masterkyn</a>
-              </div>
-              <div class="social-media-box">
-                <img src="Images/facebook.png" class="social-media-icon">
-                <a class="social-media-text" href="#">Lê Kiên</a>
-              </div>
-              <div class="social-media-box">
-                <img src="Images/tik-tok.png" class="social-media-icon">
-                <a class="social-media-text" href="#">LeeeeeKieeeen</a>
-              </div>
-              <div class="social-media-box">
-                <img src="Images/riot.png" class="social-media-icon">
-                <a class="social-media-text" href="#">ILoveWatermelon#2102</a>
-              </div>
-              <button class="see-more-button">See more</button>
-            </div>
+    <section class="section-1">
+      <div class="section-head">
+        <img src="Images/Capture00429.jpg" class="image-home">
+        <div class="timer-box-screen"></div>
+        <div class="timer-box">
+          <h1 class="title-text">We have been together for:</h1>
+          <h2 id="days-output" class="timer-text"></h2>
         </div>
-        <div class="kan-info">
-          <img src="Images/kan-avatar.jpg" class="kan-avatar">
-          <h1 class="bio-name">KynNotKien</h1>
-          <h1 class="quote-text">"Nothing is default"</h1>
-          
-            <div class="bio-box">
-              <h1 class="about-text">About me</h1>
-              <p class="bio-text">Hi, Im Kien! you can call me Kyn</p>
-              <p class="bio-text">My brithday is 08/12/2007</p>
-              <p class="bio-text">I love my Kannie, watching anime and coding :3</p>
-              <p class="bio-text">I had played lots of game before, but almost them got banned and out of sever.</p>
-              <p class="bio-text">Coding make your life better :D</p>
-            </div>
-            <div class="social-media">
-              <div class="social-media-box">
-                <img src="Images/discord.png" alt="discord" class="social-media-icon">
-                <a class="social-media-text" href="#">masterkyn</a>
-              </div>
-              <div class="social-media-box">
-                <img src="Images/facebook.png" class="social-media-icon">
-                <a class="social-media-text" href="#">Lê Kiên</a>
-              </div>
-              <div class="social-media-box">
-                <img src="Images/tik-tok.png" class="social-media-icon">
-                <a class="social-media-text" href="#">LeeeeeKieeeen</a>
-              </div>
-              <div class="social-media-box">
-                <img src="Images/riot.png" class="social-media-icon">
-                <a class="social-media-text" href="#">ILoveWatermelon#2102</a>
-              </div>
-              <button class="see-more-button">See more</button>
-            </div>
-        </div>
+        <div class="wave wave1"></div>
+        <div class="wave wave2"></div>
+        <div class="wave wave3"></div>
       </div>
     </section>
+
     <section class="section-2">
-      <img src="Images/Spotify_Full_Logo_RGB_Green.png" class="spotify-logo">
-      <div class="box">
-        <h1 class="section-1-title">Check out our playlist!</h1>
-        <p class="subtitle">This is our playlist on Spotify, you guys can try them out</p>
-        <p class="subtitle">---------</p>
-      </div>
-      <iframe class="spotify" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/08HnQu6nKb7kXwbH3IhGuw?utm_source=generator" width="400" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-      <iframe class="spotify" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/1gfsO9LpKmATnV7x7xeShO?utm_source=generator" width="400" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-      <iframe class="spotify" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/1KAb46QKoeoxvl7Jpa0nul?utm_source=generator" width="400" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-      <div class="box">
-        <h1 class="section-1-title">Why I choose Spotify?</h1>
-        <p class="subtitle">From its mobile machine-learning, artificial intelligence and data-sifting technology, Spotify analyses your listening habits and builds out customised recommendations. This includes playlists and music suggestions based on the genres and artists you're listening to regularly.</p>
-        <p class="subtitle">Link to Spotify:</p>
-        <p class="subtitle">spotify.com</p>
+      <h1>OUR INFORMATIONS</h1>
+      <div class="info">
+        <div class="info-box">
+          <img src="Images/kyn-avatar.jpg" alt="">
+          <h1>KynNotKien</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <button>Get contact</button>
+        </div>
+        <div class="info-box">
+          <img src="Images/kan-avatar.jpg" alt="">
+          <h1>Kannie</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+             Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+             Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <button>Get contact</button>
+        </div>
       </div>
     </section>
+
     <section class="section-3">
-      <div class="box">
-        <h1 class="section-1-title" style="color: black;">Contact us</h1>
-        <p class="subtitle" style="color: black">Leave your email and information to get the latest update from us</p>
-      </div>
-      <div class="contact-container">
-        <div class="contact-container-a">
-          <img src="Images/Emails-bro.png" class="image-contact">
-          <img src="Images/facebook.png" class="contact-icon">
-          <img src="Images/telephone.png" class="contact-icon">
-          <img src="Images/gmail.png" class="contact-icon">
-          <img src="Images/discord.png" class="contact-icon">
+      <div class="story">
+        <img src="Images/hug.jpg" alt="">
+        <div>
+          <h1>Lorem ipsum odor amet, consectetuer adipiscing elit.</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
-        <div class="contact-divide-colum"></div>
-        <div class="contact-container-b">
-          <h1 class="subtitle">Enter your infomation!</h1>
-          <div class="input-box">
-            <input type="text" required="required">
-            <label class="contact-text">Full name</label>
-          </div>
-          <div class="input-box">
-            
-            <input type="text" type="text" required="required">
-            <label class="contact-text">Email</label>
-          </div>
-          <div class="input-box">
-            
-            <input type="tel" type="text" required="required">
-            <label class="contact-text">Phone number</label>
-          </div>
-          <div class="input-box">
-            <textarea required="required", rows="5"></textarea>
-            <label class="contact-text">Your message</label>
-          </div>
-          <div class="input-box">
-            <input type="submit" name="" id="">
-          </div>
-        </div>
-
-        
       </div>
-      
-    </section> -->
+    </section>
 
-    <script src="main.js"></script>
 </body>
 </html>
