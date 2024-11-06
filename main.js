@@ -41,8 +41,8 @@ window.onresize = function(event) {
 //time set
 
 function diff(){
-    var a = moment('2023-3-26 12:00:00');
-    var b = moment();
+    let a = moment('2023-3-26 12:00:00');
+    let b = moment();
     diff = moment.preciseDiff(a, b, true);
 
     diff_years = diff['years'];
