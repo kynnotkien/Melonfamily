@@ -123,6 +123,12 @@
     .section-4 p{
         font-size: 25px;
     }
+    .box{
+        display: none;
+    }
+    .mbox{
+        display: flex;
+    }
 }
 
 @media (max-width: 376px) {

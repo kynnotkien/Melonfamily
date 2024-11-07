@@ -1,0 +1,211 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'San Francisco', Helvetica;
+}
+
+body{
+    background-color: #FFF8DE;
+    display: flex;
+}
+
+.login{
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.box{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    position: relative;
+    width: 1000px;
+    height: 500px;
+    background-color: #D0E8C5;
+    border-radius: 20px;
+    box-shadow: 0 0 10px black;
+}
+
+.toggle{
+    left: 0;
+    position: absolute;
+    display: flex;
+    width: 50%;
+    height: 100%;
+    background-color: #A6AEBF;
+    background: linear-gradient(#A6AEBF,#C5D3E8);
+    transition: all 0.5s ease-in-out;
+    box-shadow: 0 0 10px rgb(0, 0, 0, );
+    z-index: 100;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20%;
+    border-bottom-right-radius: 20%;
+}
+
+.toggle div{
+    color: white;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    padding: 70px;
+    flex-direction: column;
+}
+
+.toggle div h1{
+    margin: 20px;
+}
+
+.toggle div p{
+    font-size: 20px;
+    margin: 20px;
+}
+
+.log{
+    display: flex;
+}
+
+.sign{
+    display: none;
+}
+
+
+.toggle button{
+    color: white;
+    font-size: 20px;
+    width: 30%;
+    height: 50px;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 10px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.toggle button:hover{
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+    transition: 0.5s;
+}
+
+.box h1{
+    margin: 50px;
+    font-size: 30px;
+}
+
+.in-box{
+    align-self: center;
+    align-items: stretch;
+    text-align: center;
+    position: relative;
+    margin: auto;
+    width: 40%;
+    height: 80%;
+}
+
+.in-box input{
+    background-color: white;
+    width: 90%;
+    padding: 10px 20px;
+    border: 2px solid black;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+.in-box input::placeholder{
+    color: black;
+}
+
+.in-box button{
+    font-weight: bold;
+    background-color: orange;
+    width: 90%;
+    padding: 10px 0;
+    border: 3px solid black;
+    border-radius: 25px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.in-box button:hover{
+    background-color: yellow;
+    transform: translateY(-3px);
+}
+
+.mbox{
+    display: none;
+    justify-content: space-evenly;
+    text-align: center;
+    position: relative;
+    width: 90%;
+    height: 500px;
+    background-color: #D0E8C5;
+    border-radius: 20px;
+    box-shadow: 0 0 10px black;
+}
+
+
+.mbox input{
+    background-color: white;
+    width: 90%;
+    padding: 10px 20px;
+    border: 2px solid black;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+.mbox input::placeholder{
+    color: black;
+}
+
+.mbox button{
+    font-weight: bold;
+    background-color: orange;
+    width: 90%;
+    padding: 10px 0;
+    border: 3px solid black;
+    border-radius: 25px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.mbox button:hover{
+    background-color: yellow;
+    transform: translateY(-3px);
+}
+
+.box-log{
+    width: 80%;
+    display: block;
+}
+
+.box-sign{
+    width: 80%;
+    display: none;
+}
+
+.mbox input{
+    padding: 10px 10px;
+}
+
+.mbox p{
+    margin-top: 25px;
+    font-size: 15px;
+}
+
+.mbox a{
+    text-decoration: underline;
+    color:dodgerblue;
+}
+
+.mbox h1{
+    margin: 50px;
+    font-size: 30px;
+}

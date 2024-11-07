@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/header.css">
+    <link rel="stylesheet" href="CSS/login-page-style.css">
+    <link rel="stylesheet" href="CSS/responsive.css">
+    <title>Login - Melon family</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/moment-precise-range-plugin@1.3.0/moment-precise-range.min.js"></script>
+</head>
+<body>
+    <nav class="nav">
+        <ul class="sidebar">
+          <li><a href="#" onclick=hideSidebar()><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+          <li><a href="#">Logo</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Music</a></li>
+          <li><a href="#">Game</a></li>
+          <li><a href="#">Image</a></li>
+        </ul>
+        <ul style="display: flex;">
+          <li><a href="#">Logo</a></li>
+          <li class="hide-on-mobile"><a href="index.html">Home</a></li>
+          <li class="hide-on-mobile"><a href="#">Music</a></li>
+          <li class="hide-on-mobile"><a href="#">Game</a></li>
+          <li class="hide-on-mobile"><a href="#">Image</a></li>
+          <li class="hide-on-mobile"><a href="">Setting</a></li>
+          <li class="hide-on-pc"><a href="#", onclick=showSidebar()><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+      </nav>
+      <section class="login">
+        <div class="box">
+            <div class="toggle">
+                <div class="log">
+                    <h1>Welcome back!</h1>
+                    <p>Enter your personal detail to have the best experience on our site</p>
+                    <button class="" onclick=LoginToggle()>Log in</button>
+                </div>
+                <div class="sign">
+                    <h1>Hi there!</h1>
+                    <p>Frist time visit our website? Register your infomation for the best experience!</p>
+                    <button class="" onclick=SigninToggle()>Sign in</button>
+                </div>
+            </div>
+            <div class="in-box">
+                <h1>Login</h1>
+                <div><input type="text" placeholder=" Username"></div>
+                <div><input type="password" placeholder=" Password"></div>
+                <button>Login</button>
+            </div>
+            <div class="in-box">
+                <h1>Sign in</h1>
+                <div><input type="text" placeholder=" Username"></div>
+                <div><input type="text" placeholder=" Email"></div>
+                <div><input type="password" placeholder=" Password"></div>
+                <button>Sign in</button>
+            </div>
+        </div>
+
+        <div class="mbox">
+            <div class="box-log">
+                <h1>Login</h1>
+                <div><input type="text" placeholder=" Username"></div>
+                <div><input type="password" placeholder=" Password"></div>
+                <p>New to us?  <a onclick=MSignup()>Sign up</a></p>
+                <button>Login</button>
+            </div>
+            <div class="box-sign">
+                <h1>Sign in</h1>
+                <div><input type="text" placeholder=" Username"></div>
+                <div><input type="text" placeholder=" Email"></div>
+                <div><input type="password" placeholder=" Password"></div>
+                <p>Already have account?  <a onclick=MLogin()>Log in</a></p>
+                <button>Sign in</button>
+            </div>
+        </div>
+
+    </section>
+    <script src="main.js"></script>
+</body>

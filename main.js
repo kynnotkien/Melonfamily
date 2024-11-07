@@ -53,14 +53,14 @@ function diff(){
     diff_seconds = diff['seconds']; diff_seconds = diff['seconds'] < 10 ? '0' + diff_seconds : diff_seconds;
 
     document.getElementById("days-output").innerHTML = diff_years + " years " + diff_months + " months " + diff_days + " days " + diff_hours + " hours " + diff_hours + " hour " + diff_minutes + " minutes " + diff_seconds + " seconds ";
-
+    
   }
   setInterval(diff, 1000);
 
 const canvas = document.getElementById('myCanvas');
 const ctx = canvas.getContext('2d');
 
-function showSidebar(){
+function showSidebar(){ 
   const sidebar = document.querySelector('.sidebar')
   sidebar.style.display = 'flex'
 }
@@ -68,4 +68,53 @@ function showSidebar(){
 function hideSidebar(){
   const sidebar = document.querySelector('.sidebar')
   sidebar.style.display = 'none'
+}
+
+//login
+
+const login = document.getElementById('myCanvas');
+const signin = document.getElementById('myCanvas');
+
+function LoginToggle() {
+  const toggle = document.querySelector('.toggle');
+  const button = document.querySelector('.sign');
+  const buttonself = document.querySelector('.log');
+  toggle.style.left = '50%';
+  toggle.style.borderTopLeftRadius = '20%';
+  toggle.style.borderBottomLeftRadius = '20%';
+  toggle.style.borderTopRightRadius = '20px';
+  toggle.style.borderBottomRightRadius = '20px';
+  button.style.display = 'flex';
+  buttonself.style.display = 'none';
+}
+
+function SigninToggle(){
+  const toggle = document.querySelector('.toggle')
+  const button = document.querySelector('.log')
+  const buttonself = document.querySelector('.sign')
+  toggle.style.left = '0'
+  toggle.style.borderTopLeftRadius = '20px';
+  toggle.style.borderBottomLeftRadius = '20px';
+  toggle.style.borderTopRightRadius = '20%';
+  toggle.style.borderBottomRightRadius = '20%';
+  button.style.display = 'flex'
+  buttonself.style.display = 'none'
+  
+}
+
+function MSignup(){
+  const msign = document.querySelector('.box-sign')
+  const mlog = document.querySelector('.box-log')
+
+  msign.style.display = 'block';
+  mlog.style.display = 'none';
+  console.log('test')
+}
+
+function MLogin(){
+  const msignup = document.querySelector('.box-sign');
+  const mlogin = document.querySelector('.box-log');
+
+  msignup.style.display = 'none';
+  mlogin.style.display = 'block';  
 }
