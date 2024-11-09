@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/header.css">
+    <link rel="stylesheet" href="CSS/product-header.css">
+    <link rel="stylesheet" href="CSS/footer.css">
+    <link rel="stylesheet" href="CSS/responsive.css">
+    <title>Melon family</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/moment-precise-range-plugin@1.3.0/moment-precise-range.min.js"></script>
+</head>
+<body>
+    <header class="section-1">
+        <div>
+            <div class="header">
+                <h1>Logo</h1>
+                <input class="search1" type="search" placeholder="Search...">
+                <a class="icon">
+                    <img src="Images/shopping-cart.png" alt="">
+                    <li>Shopping bag</li>
+                </a>
+                <a class="icon">
+                    <img src="Images/account.png" alt="">
+                    <li>Your account</li>
+                </a>
+            </div>
+            <div class="header-low">
+                <input class="search2" type="search" placeholder="Search...">
+            </div>
+        </div>
+    </header>
+</body>
